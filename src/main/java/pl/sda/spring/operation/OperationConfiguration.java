@@ -7,18 +7,24 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author: Jakub O.  [https://github.com/JacobTheLiar]
- * @date : 2019-10-13 10:23
+ * @date : 2019-10-13 11:06
  * *
- * @className: PercentageOperationConfiguration
+ * @className: OperationConfiguration
  * *
  * *
  ******************************************************/
 @Configuration
-public class PercentageOperationConfiguration{
+public class OperationConfiguration{
     
     @Bean
     PercentageOperation percentageOperation(){
         return new PercentageOperation();
     }
+    
+    @Bean
+    SubtractionOperation subtractionOperation() {
+        return new SubtractionOperation();
+    }
+    
     
 }
